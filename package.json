@@ -1,0 +1,12 @@
+{
+  "name": "simple-express-redirect-app",
+  "version": "1.0.0",
+  "description": "A simple Express app that serves and redirects to index.html",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
