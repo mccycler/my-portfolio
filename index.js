@@ -8,8 +8,12 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Redirect all other routes to index.html
-app.get('*', (req, res) => {
+app.get('/we', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index1.html'));
 });
 
 // Start server
